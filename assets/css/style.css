@@ -99,9 +99,10 @@ display: none;
   section div span {
 color: #FF8A56;
   }
-  section {
+  .introduction {
     margin-top: 72px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
   section div h1 {
@@ -195,13 +196,20 @@ color: #FF8A56;
     display: flex;
   }
 }
-@media(min-width:1280px) {
-  .fa-bars {
-    display: none !important;
-  }
-}
+
 @media(min-width: 992px) {
   .introduction .introduction-left-side h1 {
     font-size: 4.5rem;
+  }
+
+  .portnyorlar {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media(min-width:1280px) {
+  .fa-bars {
+    display: none !important;
   }
 }
