@@ -96,7 +96,7 @@ display: none;
   .nav-links .link {
     margin-right: 4px;
   }
-  section div span {
+  .intro-h1 span {
 color: #FF8A56;
   }
   .introduction {
@@ -188,6 +188,55 @@ color: #FF8A56;
   border: 1px;
   border-radius: 4px;
  }
+
+
+ /* blogs section */
+ .dark {
+  background-color: #222;
+  color: #fff;
+  margin-top: -100px;
+ }
+ .blog {
+  padding: 30px 0;
+  border-bottom: 1px solid #ccc ;
+ }
+
+
+/* test section */
+
+.test-right-side {
+  padding-top: 10px;
+}
+.test-right-side h4 {
+  padding-top: 30px;
+}
+.test-left-side img{
+width: 100%;
+}
+
+.ac-header {
+  background-color: #222 !important;
+}
+.ac-header button {
+  color: #fff !important;
+  border: 1px solid transparent !important;
+  outline: 1px solid #222 !important;
+}
+.ac-panel {
+  background-color: #222 !important;
+  outline: 1px solid #222 !important;
+
+}
+.ac-panel .ac-text {
+  color: #fff !important;
+
+}
+.accordion-container button {
+  padding: 20px 0 !important;
+}
+.accordion-container-2 button {
+  padding: 20px 0 !important;
+}
 @media screen and (min-width:768px) {
   header nav {
     display: flex;
@@ -211,6 +260,22 @@ color: #FF8A56;
   .shirket2{
     display: flex;
   }
+  .cards-picture {
+    width: 320px !important;
+  }
+  .test-left-side img {
+    width: 100%;
+    padding-top: 1px;
+  }
+  .test-right-side h1 {
+    font-size: 25px;
+  }
+  .test-right-side img {
+    padding-top: 20px;
+  }
+  .test-right-side h1 {
+    padding-top: -10px;
+  }
 }
 
 @media(min-width: 992px) {
@@ -221,6 +286,23 @@ color: #FF8A56;
   .portnyorlar {
     display: flex;
     justify-content: space-around;
+  
+  }
+  .test-left-side img {
+    width: 500px;
+  }
+  .test-right-side {
+    padding-top: 70px;
+  }
+  .cards-picture {
+    width: 600px !important;
+  }
+}
+
+@media(min-width:1024px) {
+  .dark {
+    padding-top: 230px;
+    margin-top: -233px;
   }
 }
 
@@ -228,4 +310,5 @@ color: #FF8A56;
   .fa-bars {
     display: none !important;
   }
+ 
 }
