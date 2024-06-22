@@ -24,22 +24,48 @@
 <body>
 
     <div class="container">
-        <header class="header">
-            <div class="header-main">
-                <div class="header-image">
-                    <img src="./assets/images/logo.svg" alt="bu bir logodur" class="main-header-logo">
-                </div>
+        <header class="header container py-3">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="">
+                <img class="portfolio-creator" src="./assets/images/logo.svg" alt="">
+              </a>
+              <button class="navbar-toggler row" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportContent"
+                aria-expanded="false" aria-label="Toogle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" aria-current="page" href="">About</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" aria-current="page" href="">Services</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" aria-current="page" href="">Projects</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" aria-current="page" href="">Blog</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" aria-current="page" href="">Book a call
+                          <img class="arrow1" src="./assets/images/arrow.svg" alt="">
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+
             </div>
 
-        
-                <nav class="nav-links">
-                    <a href="#" class="link roboto-regular">About</a>
-                    <a href="#" class="link roboto-regular">Services</a>
-                    <a href="#" class="link roboto-regular">Projects</a>
-                    <a href="#" class="link roboto-regular">Blogs</a>
-                    <a href="#" class="link roboto-regular">Book a call</a>
-</nav>
-<i class="fa-solid fa-bars"></i>
+          </nav>
     
     </header>
     <section class="introduction">
@@ -57,19 +83,19 @@
     </section>
 
     
-    <section class="shirketler">
-        <h5>Trusted by</h5>
-        <div class="portnyorlar">
-            <div class="shirket">
+    <section class="shirketler maySwiper mySwiper">
+        <h5 class="py-5">Trusted by</h5>
+        <div class="portnyorlar swiper-wrapper">
+            <div class="shirket swiper-slide">
             <img src="./assets/images/partnyorlar/shirket1.svg" alt="">
             </div>
-            <div class="shirket">
+            <div class="shirket swiper-slide">
             <img src="./assets/images/partnyorlar/shirket2.svg" alt="">
             </div>
-            <div class="shirket">
+            <div class="shirket swiper-slide">
             <img src="./assets/images/partnyorlar/shirket3.svg" alt="">
             </div>
-            <div class="shirket">
+            <div class="shirket swiper-slide">
             <img src="./assets/images/partnyorlar/shirket4.svg" alt="">
             </div>
         </div>
@@ -80,9 +106,9 @@
         <div class="container">
             <div class="pojects">
                 <div class="project-left-side py-5">
-        <h6>P R O J E C T</h6>
-        <div class="view-all-projects">
-            <h2>I bring results. <br> My clients are proof.</h2>
+        <h6 class=" py-3 PROJECT">P R O J E C T</h6>
+        <div class="view-all-projects d-flex justify-content-between align-items-center">
+            <h2 class="roboto-bold">I bring results. <br> My clients are proof.</h2>
         </div>
 
         <div class="projects-right-side d-flex justify-content-end">
@@ -90,12 +116,13 @@
         </div>
     </div>
         </div>
-            
+             
+
 
 <div class="swiper projectSwiper">
     <div class="swiper-wrapper">
 
-      <div class="swiper-slide">
+      <div class="swiper-slide border-0">
         <div class="card">
             <img class="cards-picture" src="./assets/images/project-cards/carsd1.svg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -108,7 +135,7 @@
       
       <div class="swiper-slide">
         <div class="card">
-            <img class="cards-picture" src="./assets/images/project-cards/carsd1.svg" class="card-img-top" alt="...">
+            <img class="cards-picture" src="./assets/images/project-cards/card2.svg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Branding</h5>
               <h2>Soulful Rebrand</h2>
@@ -131,7 +158,7 @@
 
       <div class="swiper-slide">
         <div class="card">
-            <img class="cards-picture" src="./assets/images/project-cards/carsd1.svg" class="card-img-top" alt="...">
+            <img class="cards-picture" src="./assets/images/project-cards/card2.svg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Branding</h5>
               <h2>Soulful Rebrand</h2>
@@ -154,7 +181,7 @@
       
       <div class="swiper-slide">
         <div class="card">
-            <img class="cards-picture" src="./assets/images/project-cards/carsd1.svg" class="card-img-top" alt="...">
+            <img class="cards-picture" src="./assets/images/project-cards/card2.svg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Branding</h5>
               <h2>Soulful Rebrand</h2>
@@ -188,12 +215,12 @@
         <div class="row">
 
           <div class="col-12 col-md-6 col-lg-4">
-            <h6>Blogs</h6>
-            <h2>Latest Blogs</h2>
-            <a href="" class="text-white">View all <img src="./assets/images/blog.svg" alt=""></a>
+            <h6 class="BLOG text-uppercase">Blogs</h6>
+            <h2 class="roboto-bold">Latest Blogs</h2>
+            <a href="" class="view text-white">View all <img src="./assets/images/blog.svg" alt=""></a>
           </div>
   
-          <div class="col-12 col-md-6 col-lg-8">
+          <div class="blog-right-side col-12 col-md-6 col-lg-8">
           </div>
   
   
@@ -205,7 +232,7 @@
 
     <div class="container">
       <section class="test-section swiper test-swiper py-5">
-<h5>Testimonials</h5>
+<h5 class="Testim text-uppercase">Testimonials</h5>
 <h1 class="py-4">Word on the street</h1>
 <div class="info-tests swiper-wrapper">
   <div class="tests swiper-slide">
@@ -220,14 +247,6 @@
      <p>Founder, Double Bunch</p>
         </div>
 
-
-
-      <div class="naviqasiyaButonlari my-3 d-flex justify-content-end">
-    <button class="prevButton"><img src="./assets/images/project-cards/button1.svg"
-       alt=""></button>
-    <button class="nextButton"><img src="./assets/images/project-cards/button2.svg"
-       alt=""></button>
-      </div>
 
     </div>
     
@@ -245,12 +264,6 @@
      <h4>John Frankin</h4>
      <p>Founder, Double Bunch</p>
         </div>
-        <div class="naviqasiyaButonlari my-3 d-flex justify-content-end">
-          <button class="prevButton"><img src="./assets/images/project-cards/button1.svg"
-             alt=""></button>
-          <button class="nextButton"><img src="./assets/images/project-cards/button2.svg"
-             alt=""></button>
-            </div>
     </div>
   </div>
 
@@ -266,22 +279,22 @@
      <h4>John Frankin</h4>
      <p>Founder, Double Bunch</p>
         </div>
-        <div class="naviqasiyaButonlari my-3 d-flex justify-content-end">
-          <button class="prevButton"><img src="./assets/images/project-cards/button1.svg"
-             alt=""></button>
-          <button class="nextButton"><img src="./assets/images/project-cards/button2.svg"
-             alt=""></button>
-            </div>
     </div>
 
   </div>
+</div>
 
-
+  <div class="naviqasiyaButonlari my-3 d-flex justify-content-end">
+    <button class="prevButton btn btn-light"><img src="./assets/images/project-cards/button1.svg"
+       alt=""></button>
+    <button class="nextButton btn btn-light"><img src="./assets/images/project-cards/button2.svg"
+       alt=""></button>
+      </div>
       </section>
     </div>
 
 <!-- ACCORDION SECTION -->
-<section class="faq-section bg-dark py-5">
+<section class="faq-section bg-black py-5">
   <div class="container">
     <h6 class="text-center text-uppercase text-warning">FAQ</h6>
     <h2 class="text-center text-light my-4">Frequently asked questions</h2>
@@ -414,6 +427,49 @@
     </div>
   </div>
 </section>
+
+<footer class="">
+<div class="container">
+  <h1 class="text-light roboto-bold">Ready to make something kickass?</h1>
+  <h1 class="footer-h2 roboto-bold py-3 ">Let's get on a call.</h1>
+
+  <div class="contact-about row">
+    <div class="contact-about-left-side col-12 col-md-7">
+<img src="./assets/images/footer/portfoliofooter.svg" alt="">
+<p class="py-3">4353 Delaware Avenue, San Francisco, USA</p>
+<div class="mail d-flex py-2">
+  <img src="./assets/images/footer/mail.svg" alt="">
+  <h6 class="px-4">hi@thefolio.com</h6>
+</div>
+    </div>
+
+    <div class="all-contacts container d-flex col-12 col-md-2 ">
+      <div class="contact-about-right-side">
+        <h6 class="text-light roboto-bold">About</h6>
+        <h6 class="text-light roboto-bold">Contact</h6>
+        <h6 class="text-light roboto-bold">Dribble</h6>
+            </div>
+        
+            <div class="contact-about-left-side">
+              <h6 class="text-light roboto-bold">Services</h6>
+              <h6 class="text-light roboto-bold">Blog</h6>
+              <h6 class="text-light roboto-bold">Instagram</h6>
+                  </div>
+        
+                  <div class="contact-about-left-side ">
+                    <h6 class="text-light roboto-bold">Experience</h6>
+                    <h6 class="text-light roboto-bold">Projects</h6>
+                    <h6 class="text-light roboto-bold">Twitter</h6>
+                        </div>
+    
+                      </div>
+    <div class="author">
+      <h6>© All rights reserved. Sumit Hegde .Powered by Webflow / Image License Info / Instructions / Changelog / Style Guide  </h6>
+    </div>
+  </div>
+</div>
+</footer>
+
 
 <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

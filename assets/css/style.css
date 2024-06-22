@@ -73,36 +73,24 @@
     font-style: italic;
   }
 
-  header {
-      display: flex;
-       justify-content: space-between;
-       align-items: center;
-      /*margin-left: 112px;
-      margin-right: 112px;
-      margin-top: 40px;
-      margin: 40px 112px 13px 112px; */
+ 
+.portfolio-creator {
+  width: 190px;
+}
+.arrow1 {
+  margin-left: 3px;
+  display: none;
+}
+.py-3 {
+  font-size: 15px;
+}
 
-  }
-
-  header nav a {
-    color: #000;
-    text-decoration: none;
-    margin: 20px;
-
-  }
-  header nav {
-display: none;
-  }
-  .nav-links .link {
-    margin-right: 4px;
-  }
   .intro-h1 span {
 color: #FF8A56;
   }
   .introduction {
     margin-top: 72px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
   }
   section div h1 {
@@ -116,7 +104,7 @@ color: #FF8A56;
     width: 500px;
   }
   .introduction-right-side img {
-width: 100%;
+    width: 100%;
   }
   .intro-left-side img {
     margin-left: 15px;
@@ -172,6 +160,10 @@ color: #FF8A56;
  .shirket2{
   display: none;
  }
+ .shirket img {
+  width: 250px;
+  margin-left: 40px;
+    } 
 
 
  /* project section */
@@ -194,7 +186,8 @@ color: #FF8A56;
  .dark {
   background-color: #222;
   color: #fff;
-  margin-top: -100px;
+  margin-top: -172px;
+  padding: 120px 30px;
  }
  .blog {
   padding: 30px 0;
@@ -213,7 +206,33 @@ color: #FF8A56;
 .test-left-side img{
 width: 100%;
 }
-
+.Testim {
+  color: #4353FF;
+}
+.PROJECT {
+  color: #B16CEA;
+}
+.BLOG {
+  color: #FFA84B;
+}
+.naviqasiyaButonlari {
+  padding-top: 45px !important;
+}
+.prevButton {
+  background-color: #fff !important;
+  width: 54px;
+  height: 54px;
+  margin-right: 10px;
+}
+.nextButton {
+  background-color: #fff !important;
+  width: 54px;
+  height: 54px;
+}
+/* ACCORDION */
+.faq-section {
+  background-color: #000 !important;
+}
 .ac-header {
   background-color: #222 !important;
 }
@@ -237,29 +256,81 @@ width: 100%;
 .accordion-container-2 button {
   padding: 20px 0 !important;
 }
-@media screen and (min-width:768px) {
-  header nav {
+/* FOOTER */
+footer {
+  padding-top: 184px;
+  background-color: #000;
+}
+.footer-h2 {
+  color: #3C46FF;
+}
+.contact-about {
+  padding-top: 80px;
+}
+.contact-about p {
+  color: #666666;
+}
+.mail h6 {
+color: #666666;
+}
+.author h6 {
+  color: #666;
+  padding-top: 100px;
+}
+
+
+ @media(min-width:320px) and (max-width:323px) {
+
+
+  .all-contacts {
     display: flex;
-    gap: 3px;
-    align-items: center;
+    gap: 10px;
+    padding-top: 40px;
+     }
+
+  .book-a-call {
+    width: 107px;
   }
+ .cv {
+  text-decoration: none;
+  color: #222;
+ }
+  .view {
+    text-decoration: none;
+  }
+  
   .fa-bars {
     display: none !important;
   }
   .introduction {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     flex-direction: row;
   }
   .introduction .introduction-left-side h1 {
-    font-size: 3rem;
+    font-size: 31px;
+    flex: 1 1 50%;
+    padding: 10px;
   }
-  .shirket1{
+ 
+ 
+  
+  .shirketler .portnyorlar {
     display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+   
   }
-  .shirket2{
-    display: flex;
+  .shirket img {
+width: 230px;
+margin-left: 20px;
+  } 
+  .dark {
+padding-top: 250px;
+margin-top: -270px;
   }
+  
   .cards-picture {
     width: 320px !important;
   }
@@ -277,17 +348,59 @@ width: 100%;
     padding-top: -10px;
   }
 }
+@media(min-width:768px) and (max-width:991px){
+  .arrow1 {
+    display: none;
+  }
+  .nav-right-side {
+    padding-left: 100px;
+  }
+  .test-left-side img {
+    width: 100%;
+    padding-top: 1px;
+  }
+  .test-right-side h1 {
+    font-size: 25px;
+  }
+  .test-right-side img {
+    padding-top: 20px;
+  }
+  .test-right-side h1 {
+    padding-top: -10px;
+  }
+  .dark {
+    padding-top: 300px;
+    margin-top: -270px;
+  }
+  .blog {
+padding-bottom: 150px 0;
+
+}
+.shirket img {
+  width: 250px;
+  margin-left: 40px;
+    } 
+    .all-contacts {
+      display: flex;
+      gap: 17px;
+       }
+}
+
 
 @media(min-width: 992px) {
+  .arrow1 {
+    display: inline-block;
+  }
   .introduction .introduction-left-side h1 {
     font-size: 4.5rem;
   }
 
-  .portnyorlar {
+  .shirketler .portnyorlar {
     display: flex;
     justify-content: space-around;
-  
+   
   }
+  
   .test-left-side img {
     width: 500px;
   }
@@ -297,12 +410,33 @@ width: 100%;
   .cards-picture {
     width: 600px !important;
   }
+  .test-left-side img {
+    width: 100% !important;
+  }
+  .test-right-side {
+    padding-top: 70px;
+  }
+  .dark {
+    padding-top: 170px;
+    margin-top: -170px;
+  }
+  footer h1 {
+  font-size: 54px !important;
+  }
+  .all-contacts {
+ display: flex;
+ gap: 80px;
+  }
 }
 
 @media(min-width:1024px) {
   .dark {
-    padding-top: 230px;
-    margin-top: -233px;
+    padding-top: 280px;
+    margin-top: -280px;
+    .all-contacts {
+      display: flex;
+      gap: 80px;
+       }
   }
 }
 
@@ -310,5 +444,8 @@ width: 100%;
   .fa-bars {
     display: none !important;
   }
- 
+  .all-contacts {
+    display: flex;
+    gap: 80px;
+     }
 }

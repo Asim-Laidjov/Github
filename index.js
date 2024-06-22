@@ -1,6 +1,50 @@
+let maySwiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  autoplay:true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+
+    768: {
+      slidesPerView:  2,
+      spaceBetween: 40,
+    },
+
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+
+  },
+  
+});
+
+
+
+
 let proyektSwiper = new Swiper(".projectSwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+  
+      768: {
+        slidesPerView:  2,
+        spaceBetween: 40,
+      },
+  
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+  
+    },
    // pagination: {
       //el: ".swiper-pagination",
       //clickable: true,
@@ -61,7 +105,7 @@ const swiper = new Swiper(".test-swiper", {
     },
 
     768: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 40,
     },
 
